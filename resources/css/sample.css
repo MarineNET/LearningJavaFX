@@ -1,0 +1,25 @@
+/*This applies to the 'root' file, which in our case is GridPane*/
+.root {
+    -fx-font-family: Papyrus;
+    -fx-alignment: center;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+/* This format represents a Class style*/
+.title {
+    -fx-font-size: 80px;
+    -fx-fill: AQUA;
+}
+
+/*Applies only to TextFields. This overrides the value from .root*/
+.text-field {
+    -fx-font-family: Helvetica;
+}
+
+/*This applies to a specific ID. Overrides all the previous values.
+In our case, this overrides the font-family given by .text-field */
+#firstName {
+    -fx-font-family: Impact;
+    -fx-background-color: yellow;
+}
